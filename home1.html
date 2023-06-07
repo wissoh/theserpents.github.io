@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Technological Academy - Courses</title>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #222;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #000;
+            padding: 10px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .course {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .course-image {
+            width: 250px;
+            margin-right: 20px;
+        }
+
+        .course-info {
+            flex-grow: 1;
+        }
+
+        .course-title {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .course-description {
+            margin: 10px 0;
+        }
+
+        .enroll-button {
+            background-color: #00c4ff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .enroll-button:hover {
+            background-color: #00a2cc;
+        }
+
+        footer {
+            background-color: #000;
+            padding: 10px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Technological Academy</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <section>
+            <div class="course">
+                <img class="course-image" src="11.PNG" alt="Course 1">
+                <div class="course-info">
+                    <h2 class="course-title">Stage 1</h2>
+                    <p class="course-description">Learn basic syntax and arthmetic operations</p>
+                    <button class="enroll-button">Start Learning</button>
+                </div>
+            </div>
+
+            <div class="course">
+                <img class="course-image" src="R.jpg" alt="Course 2">
+                <div class="course-info">
+                    <h2 class="course-title">Stage 2</h2>
+                    <p class="course-description">Practice and database introduction</p>
+                    <button class="enroll-button">Start Learning</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Dar-Al Hayat School. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

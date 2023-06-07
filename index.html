@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Technological Academy</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family:  math;
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* Header */
+        header {
+            background-color: rgb(10, 11, 12);
+            color: rgb(26, 17, 17);
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            color: rgb(248, 245, 245);
+        }
+
+        /* Hero Section */
+        #hero {
+            background-image: url('py.jpeg'); /* Empty placeholder for hero image */
+            background-size: cover;
+            background-position: center;
+            height: 700px;
+            /*font: Georgia;*/
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: rgb(19, 18, 18);
+            /*font: Georgia;*/
+        }
+
+        .hero-content {
+            max-width: 600px;
+            margin: auto;
+            /*font: Georgia;*/
+        }
+
+        .hero-content h1 {
+            /*font: Luminari;*/
+            font-size: 40px;
+        }
+
+        .button {
+            display: inline-block;
+            font: Georgia;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        /* Courses Section */
+        #courses {
+            padding: 50px;
+        }
+
+        .course-card {
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .course-card h3 {
+            font-size: 24px;
+            margin-top: 10px;
+        }
+
+        .course-card p {
+            margin-top: 10px;
+        }
+
+        /* About Section */
+        #about {
+            background-color: #f9f9f9;
+            padding: 50px;
+            text-align: center;
+        }
+
+        #about h2 {
+            margin-bottom: 20px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="home1.html">Courses</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="hero">
+        <div class="hero-content">
+            <h1>The best ever website to learn python!</h1>
+            <p></p>  
+            <a href="home1.html" class="button">Explore Courses</a>
+        </div>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="course-card">
+            <img src="" alt="Course 1"> <!-- Empty placeholder for course image -->
+            <h3>Roll the dice project</h3>
+            <p></p>
+            <pre><code>
+                print("hello world")
+                int:5
+                </pre></code>
+            <a href="course_1.html" class="button">Try it</a>
+        </div>
+        <div class="course-card">
+            <img src="" alt="Course 2"> <!-- Empty placeholder for course image -->
+            <h3>Countdown</h3>
+            <p></p>
+            <a href="#" class="button">Try it</a>
+        </div>
+    </section>
+    
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are a group og grade 9 students wanting a better programming education for the upcoming generations.</p>
+        <a href="#" class="button">Learn More</a>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 Dar-AL Hayat School. All rights reserved.</p>
+    </footer>
+</body>
+</html>
