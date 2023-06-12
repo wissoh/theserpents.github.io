@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Technological Academy</title>
+    <title>Programming Trainer</title>
     <style>
         /* Global Styles */
         body {
@@ -119,44 +119,130 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="home1.html">Courses</a></li>
                 <li><a href="#">About Us</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="projects.html">Projects</a></li>
             </ul>
         </nav>
     </header>
     
     <section id="hero">
         <div class="hero-content">
-            <h1>The best ever website to learn python!</h1>
+            <h1>We are Mythical Serpents, Become Mythical Using python, the Pasreltongue of Computing</h1>
             <p></p>  
             <a href="home1.html" class="button">Explore Courses</a>
+            <a href="quiz.html" class="button">Take our quiz</a>
+            <a href="projects.html" class="button">View Projects</a>
         </div>
     </section>
     
     <section id="projects">
         <h2>Projects</h2>
         <div class="course-card">
-            <img src="" alt="Course 1"> <!-- Empty placeholder for course image -->
             <h3>Roll the dice project</h3>
-            <p></p>
+            <p> This is a very simple python code that you can do in your free time.</p>
+            <h2>Code:</h2>
             <pre><code>
                 print("hello world")
                 int:5
+                import random
+
+                def draw_dice(dice_value):
+                if dice_value == 1:
+                    print("+---------+")
+                    print("|         |")
+                    print("|    O    |")
+                    print("|         |")
+                    print("+---------+")
+                elif dice_value == 2:
+                    print("+---------+")
+                    print("| O       |")
+                    print("|         |")
+                    print("|       O |")
+                    print("+---------+")
+                elif dice_value == 3:
+                    print("+---------+")
+                    print("| O       |")
+                    print("|    O    |")
+                    print("|       O |")
+                    print("+---------+")
+                elif dice_value == 4:
+                    print("+---------+")
+                    print("| O     O |")
+                    print("|         |")
+                    print("| O     O |")
+                    print("+---------+")
+                elif dice_value == 5:
+                    print("+---------+")
+                    print("| O     O |")
+                    print("|    O    |")
+                    print("| O     O |")
+                    print("+---------+")
+                elif dice_value == 6:
+                    print("+---------+")
+                    print("| O     O |")
+                    print("| O     O |")
+                    print("| O     O |")
+                    print("+---------+")
+
+                def roll_dice():
+                    # Generate random numbers between 1 and 6 for two dice
+                    dice1 = random.randint(1, 6)
+                    dice2 = random.randint(1, 6)
+                    
+                    # Calculate the total sum of the dice
+                    total = dice1 + dice2
+                    
+                    # Print the results and draw the dice
+                    print("Dice 1:")
+                    draw_dice(dice1)
+                    print()
+                    print("Dice 2:")
+                    draw_dice(dice2)
+                    print()
+                    print("Total:", total)
+
+                    # Main program
+                    print("Roll the Dice")
+                    print("----------------")
+                    roll_dice()
+
                 </pre></code>
-            <a href="course_1.html" class="button">Try it</a>
+                <p>Now this may seem pretty complicated, but actually it's not! You just need to define those two dice, then using the Random function you can scramble them to give you your total. The only challenging part here is to manage to draw the dice, which is not necessary, you can simply do this project using numbers only.</p>
+                <h4>Below is the output for a random scramble:</h4>
+                <pre><code>
+                    Roll the Dice
+                    ----------------
+                    Dice 1:
+                    +---------+
+                    | O     O |
+                    | O     O |
+                    | O     O |
+                    +---------+
+
+                    Dice 2:
+                    +---------+
+                    | O     O |
+                    | O     O |
+                    | O     O |
+                    +---------+
+
+                    Total: 12
+       
+                </pre></code>
+                <h4>You can find a link for the terminal here, so you can go ahead and test it for yourself:</h4>    
+            <a href="roll_the_dice-try _it.html" class="button">Try it</a>
         </div>
         <div class="course-card">
-            <img src="" alt="Course 2"> <!-- Empty placeholder for course image -->
-            <h3>Countdown</h3>
             <p></p>
-            <a href="#" class="button">Try it</a>
+            <a href="projects.html" class="button">More amazing interactive projects</a>
         </div>
     </section>
-    
+    <a href="quiz.html" class="button">Take our quiz!</a>
     <section id="about">
         <h2>About Us</h2>
         <p>We are a group og grade 9 students wanting a better programming education for the upcoming generations.</p>
         <a href="#" class="button">Learn More</a>
     </section>
-    
     <footer>
         <p>&copy; 2023 Dar-AL Hayat School. All rights reserved.</p>
     </footer>

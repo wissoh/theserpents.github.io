@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Technological Academy - Courses</title>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(247, 238, 238);
+            color: rgb(26, 21, 21);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: rgb(22, 18, 18);
+            padding: 10px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .course {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .course-image {
+            width: 250px;
+            margin-right: 20px;
+        }
+
+        .course-info {
+            flex-grow: 1;
+        }
+
+        .course-title {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .course-description {
+            margin: 10px 0;
+        }
+
+        .enroll-button {
+            background-color: #00c4ff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .enroll-button:hover {
+            background-color: #00a2cc;
+        }
+
+        footer {
+            background-color: #000;
+            padding: 10px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Technological Academy</h1>
+        </div>
+    </header>
+    <div>
+        <p>Hello and welcome to stage 2 of our python course</p>
+        <p>In this stage, we will go deeper in web development (databases), and we will do a lot of practice exercises and projects.</p>
+        <ol><p>
+            Material:
+            <br>
+            <b>1-</b> Setting up the environment
+            <br>
+            <b>2-</b> Web development bases and HTML syntax
+            <br>
+            <b>3-</b> Data bases
+            <br>
+            <b>4-</b> Setting up a databse using Python and SQL
+            <br>
+            <b>5-</b> Project 1
+            <br>
+            <b>6-</b> Project 2
+            <br>
+            <b>7-</b> Bonus project
+            <br>
+        </p></ol>
+        <div>
+            <b>1-</b> Setting up the environment
+            <ol><p>This is an already done process since it is included in stage 1.</p>
+            
+            <p>Just note that we are going to use visual studio code and it's a must to have python installed on your device.</p>
+            </ol>
+            <b>2-</b> Web development bases and HTML syntax
+            <ol><p>Web development is the process of creating websites and connecting them to servers. Web development is defined under two terms, Backend (server work, code, database connection ...) and Frontend (what the user sees, UX, designs...). In this chapter we are gonna go through the backend stuff(code) especially the code that makes websites all over planet earth work HTML. </p>
+            <p>Web development is like building a house on the internet! Just like a house has different parts, web development has different components too. The main parts of web development are HTML, CSS, and JavaScript. HTML is like the structure of a house, it defines the different sections and elements of a web page. CSS is like the paint and decorations, it adds colors, fonts, and styles to make the web page look beautiful. JavaScript is like the electricity that makes things come alive, it adds interactivity and allows you to create dynamic effects. When you visit a website, your web browser takes the HTML, CSS, and JavaScript code and turns it into a visual web page. Here's a simple diagram to help you understand:"
+                <img src="web-icon-768x432.jpg" alt="Image" style="width: 700px; height: 300px;">
+               
+                </p>
+            <p>HTML is the building block of any website, from a small project (like this website) to bigger companies that handle a ton of users. Of course, we can't just build a website using HTML only, since HTML has very limited styling features, which is why websites all around the globe use CSS and JavaScript (two other building blocks of websites, which serve the purpose of designing the website) to make their websites look nice and modern. Also, developers tend to use HTML, not because it's the best, but because it's a very simple programming language that anyone can learn in a short period of time.</p>
+            <p>Here is a diagram explaining the above:</p>
+            <img src="Capture3.PNG" alt="Image" style="width: 500px; height: 300px;">
+            
+            <p>Enough talking, let us go to the fun stuff:</p>
+            <img src="Capture.PNG" alt="Image" style="width: 700px; height: 300px;">
+            <p>Here is the basic HTML webpage any developer starts with, then he starts to write code for the header (head), and then goes on to do the body code, and then finishes of with the copyrights and messages (footer)</p>
+            <p>You may have noticed that before the text I typed there is a p command and then /p. This is the simplified verison of "paragraph" that we use to declare that there is a paragraph here (we start by p (surronded by <>) and then /p to end the patagraph</p>
+            <p>
+                <b>1-</b> p - /p --------> paragraph
+                <br>
+                
+                <b>2-</b> code - /code --------> include a code inside the page
+                <br>
+                <b>3-</b> h1 - /h1 --------> include a text with a sharp and big font (you can use h1,h2,h3,h4 each representing a diffrent size of a heading)
+            
+            </p>
+            
+            <p>These were some of the HTML syntax (a very small portion of them), but now you know how websites are created, and have an idea about where and how and what do their codes look like.</p>
+        </ol>
+        <b>3-</b> Data bases
+        <ol><p>
+            <b>What is a Database?</b>
+<br>
+Imagine you have a big collection of information, like a library with many books. A database is like a digital version of that library. It's a place where you can store and organize your information in a structured way. In a database, you can store data such as names, numbers, text, and more.
+<br>
+<b>Python and Databases</b>
+<br>
+Python is a powerful programming language that can help you work with databases. Python provides libraries and modules that make it easy to connect to databases, create tables, insert data, retrieve data, and perform other operations.
+<br>
+For example, the sqlite3 module in Python allows you to work with SQLite databases. SQLite is a simple database system that doesn't require a separate server. Here's a basic example of how to use Python to work with a database:
+<br>
+<pre><code>
+import sqlite3
+
+# Connect to the database (or create a new one if it doesn't exist)
+connection = sqlite3.connect("mydatabase.db")
+
+# Create a cursor object to execute SQL commands
+cursor = connection.cursor()
+
+# Create a table
+cursor.execute("CREATE TABLE students (name TEXT, age INTEGER)")
+
+# Insert data into the table
+cursor.execute("INSERT INTO students VALUES ('Alice', 10)")
+cursor.execute("INSERT INTO students VALUES ('Bob', 12)")
+
+# Retrieve data from the table
+cursor.execute("SELECT * FROM students")
+results = cursor.fetchall()
+for row in results:
+    print(row)
+
+# Close the connection
+connection.close()
+</pre></code>
+<p>Now this is an advanced level of working with python in the backend, if you want and have the time for it, <a href="https://www.geeksforgeeks.org/python-database-tutorial/">this is an article explaining it in simple words.</a>
+</p>
+<h4><b>5-</b> Project 1</h4>
+<p>In this project, you are asked to create a code that changes a specific sentence from uppercase to lowercase letters only. Firstly, when dealing with these things, try to look out for the things given in the text, go through them, one time and more, then start writing the code and if you encounter any difficulty you can type your problem on google or CHATGPT wwhich will give you the right answer.</p>
+<p>The given sentence: HELLO WORLD</p>
+<pre><code>
+    name ="Hello World"
+    print("Print {name}, but with all the letters small")
+    print(name.lower())
+</pre></code>
+<p>You can find a link to an online terminal <a href="https://trinket.io/python/1d1e6f0a10">here</a>. Go ahead and try it over there (or on your machine).</p>
+<h4><b>6-</b> Project 2</h4>
+<p>This project is the same as the one in the projects page (project 3). Which is the countdown clock</p>
+<p>This project combines taking input, working with arthmetic operations, and giving a good-looking output in 1 project</p>
+<p>Task: create a countdown clock that lets the user input a time (seconds), and display the output of it. This project is kind of hard for some people, like you are knew here, so you are not expected to do such stuff that easily.</p>
+<p>Solution:</p>
+<pre>
+    import time
+
+        my_time = int(input("Enter the time in seconds: "))
+
+        for x in range(my_time, 0, -1):
+            seconds = x % 60
+            minutes = int(x / 60) % 60
+            hours = int(x / 3600)
+            print("{}:{}:{}").format(hours, minutes, seconds)
+            time.sleep(1) 
+
+    print("TIME’S UP!")   
+</pre>
+<p>And that's it!, you just created your first advanced project! Congratulations</p>
+<p>print("You are doing an amazing job!")</p>
+<h4><b>7-</b> Bonus project</h4>
+<p>Task: create an algorithm in which the user inputs their name and age, and the output will be the year that they were born in.</p>
+<p><a href="https://trinket.io/python/a96fd89806">Solution</a></p>
+</p>
+        </p></ol>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Dar-Al Hayat School. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

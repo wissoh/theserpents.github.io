@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Projects Showcase</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Projects Showcase</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">About</a></li>
+                <li><a href="home1.html">Courses</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="project">
+        <div class="course-card">
+            <h2>Project 1: Roll the dice </h2>
+            <p> This is a very simple python code that you can do in your free time.</p>
+            <h4>Code:</h4>
+            <pre><code>
+                print("hello world")
+                int:5
+                import random
+
+                def draw_dice(dice_value):
+                if dice_value == 1:
+                    print("+---------+")
+                    print("|         |")
+                    print("|    O    |")
+                    print("|         |")
+                    print("+---------+")
+                elif dice_value == 2:
+                    print("+---------+")
+                    print("| O       |")
+                    print("|         |")
+                    print("|       O |")
+                    print("+---------+")
+                elif dice_value == 3:
+                    print("+---------+")
+                    print("| O       |")
+                    print("|    O    |")
+                    print("|       O |")
+                    print("+---------+")
+                elif dice_value == 4:
+                    print("+---------+")
+                    print("| O     O |")
+                    print("|         |")
+                    print("| O     O |")
+                    print("+---------+")
+                elif dice_value == 5:
+                    print("+---------+")
+                    print("| O     O |")
+                    print("|    O    |")
+                    print("| O     O |")
+                    print("+---------+")
+                elif dice_value == 6:
+                    print("+---------+")
+                    print("| O     O |")
+                    print("| O     O |")
+                    print("| O     O |")
+                    print("+---------+")
+
+                def roll_dice():
+                    # Generate random numbers between 1 and 6 for two dice
+                    dice1 = random.randint(1, 6)
+                    dice2 = random.randint(1, 6)
+                    
+                    # Calculate the total sum of the dice
+                    total = dice1 + dice2
+                    
+                    # Print the results and draw the dice
+                    print("Dice 1:")
+                    draw_dice(dice1)
+                    print()
+                    print("Dice 2:")
+                    draw_dice(dice2)
+                    print()
+                    print("Total:", total)
+
+                    # Main program
+                    print("Roll the Dice")
+                    print("----------------")
+                    roll_dice()
+
+                </pre></code>
+                <p>Now this may seem pretty complicated, but actually it's not! You just need to define those two dices, then using the Random function you can scramble them to give you your total. The only challenging part here is to manage to draw the dice, which is something not necessary, you can simply do this project using numbers only.</p>
+                <h4>Below is the output for a random scramble:</h4>
+                <pre><code>
+                    Roll the Dice
+                    ----------------
+                    Dice 1:
+                    +---------+
+                    | O     O |
+                    | O     O |
+                    | O     O |
+                    +---------+
+
+                    Dice 2:
+                    +---------+
+                    | O     O |
+                    | O     O |
+                    | O     O |
+                    +---------+
+
+                    Total: 12
+       
+                </pre></code>
+                <h4>You can find a link for the terminal here, so you can go ahead and test it for yourself:</h4>    
+            <a href="roll_the_dice-try _it.html" class="button">Try it</a>
+        </div>
+        
+        
+    </section>
+
+    <section class="project">
+        
+        <div class="course-card">
+            <h2>Project2: rock,paper, scissors</h2>
+            <h4>Code:</h4>
+            <pre><code>
+                import random
+                options = ("rock", "paper", "scissors")
+                running = True
+                
+                while running: 
+                
+                  player = None
+                  computer = random.choice(options)
+                  player = input("Enter a choice (rock, paper, scissors): ")
+                  print("Player: {}").format(player)
+                  print("Computer: {}").format(computer)
+                
+                  if player == computer: 
+                    print("It’s a tie!")
+                  elif player == "rock" and computer == "scissors": 
+                    print("You win!")
+                  elif player == "paper" and computer == "rock":
+                    print("You win!")
+                  elif player == "scissors" and computer == "paper":
+                    print("You win!")
+                  else: 
+                    print("You lose!")
+                
+                  if not input("Play again? (y/n): ").lower() == "y" : running = False 
+                  print("Thanks for playing!")  
+        </pre></code>
+        <h4>Result:</h4>
+        <pre><code>
+            Enter a choice (rock, paper, scissors):  rock
+            Player: rock
+            Computer: scissors
+            You win!
+            Play again? (y/n):  n
+            Thanks for playing!
+        </pre></code>
+        <p>This is also a simple project, plus it introduces conditionals (if,elif...). Also, it provides the learner with an introduction to loops, when and how to create them, and how to run their code another time if needed (last line of the code).</p>
+        <h4>You can find a link for the terminal here, so you can go ahead and test it for yourself:</h4>
+        <a href="rps_try-it.html" class="button">Try it</a>
+    </section>
+    <div>
+        <h2>Project 3: Countdown clock</h2>
+        <p>This is a beginners project in which integers and how to define them is showed, also taking input from the user is included, as well as simple arithmetic operations.</p>
+        <h4>Code:</h4>
+        <pre><code>
+            import time
+
+            my_time = int(input("Enter the time in seconds: "))
+
+            for x in range(my_time, 0, -1):
+                seconds = x % 60
+                minutes = int(x / 60) % 60
+                hours = int(x / 3600)
+                print("{}:{}:{}").format(hours, minutes, seconds)
+                time.sleep(1) 
+
+            print("TIME’S UP!")
+        </pre></code>
+        <h4>Result:</h4>
+        <pre><code>
+            Enter the time in seconds: 12
+            00:00:12
+            00:00:11
+            00:00:10
+            00:00:09
+            00:00:08
+            00:00:07
+            00:00:06
+            00:00:05
+            00:00:04
+            00:00:03
+            00:00:02
+            00:00:01
+            TIME’S UP!
+        </pre></code>
+        <h4>You can find a link for the terminal here, so you can go ahead and test it for yourself:</h4>
+        <a href="countdown_try-it.html" class="button">Try it</a>
+    </div>
+    <div>
+        <h2>Project 4: Temperature converter</h2>
+        <p>This project converts the temperature for C(Celsius) to F(Fahrenheit) and vise-versa.</p>
+        <h4>Code:</h4>
+        <pre><code>
+            
+            temp = input("Input the  temperature you like to convert? (e.g., 45F, 102C etc.) : ")
+            degree = int(temp[:-1])
+            i_convention = temp[-1]
+
+            if i_convention.upper() == "C":
+            result = int(round((9 * degree) / 5 + 32))
+            o_convention = "Fahrenheit"
+            elif i_convention.upper() == "F":
+            result = int(round((degree - 32) * 5 / 9))
+            o_convention = "Celsius"
+            else:
+            print("Input proper convention.")
+            quit()
+            print("The temperature in {}, is {} degrees.").format(o_convention, result)
+        </pre></code>
+        <h4>Result:</h4>
+        <pre><code>
+            Input the  temperature you like to convert? (e.g., 45F, 102C etc.) :  45F
+            The temperature in Celsius, is 7 degrees.
+        </pre></code>
+        <h4>You can find a link for the terminal here, so you can go ahead and test it for yourself:</h4>
+        <a href="tmp-try-it.html" class="button">Try it</a>
+    </div>
+    <footer>
+        <p>&copy; 2023 Dar-Al Hayat School. All rights reserved.</p>
+    </footer>
+</body>
+</html>

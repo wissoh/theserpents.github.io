@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Technological Academy - Courses</title>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(247, 238, 238);
+            color: rgb(26, 21, 21);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: rgb(22, 18, 18);
+            padding: 10px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .course {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .course-image {
+            width: 250px;
+            margin-right: 20px;
+        }
+
+        .course-info {
+            flex-grow: 1;
+        }
+
+        .course-title {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .course-description {
+            margin: 10px 0;
+        }
+
+        .enroll-button {
+            background-color: #00c4ff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .enroll-button:hover {
+            background-color: #00a2cc;
+        }
+
+        footer {
+            background-color: #000;
+            padding: 10px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Technological Academy</h1>
+        </div>
+    </header>
+    <div>
+        <p>Hello and welcome to our first course here (stage 1). We want to thank you for your visit, your love for learning and passion is respected.</p>
+        <p>In your life, never do something without your OWN will, yes maybe our guardians may want us to do something we do not enjoy, and yes maybe our surrondings want us to be like them, want us to do something they enjoy and not us, but we always should see the best for us first and what makes happy and satisfied, and then we can look-out and take advices from others. We want you here confident, passionate, and most importantly happy.</p>
+        <p>
+            <h2>Course syllabus:</h2>
+                <b>1-</b> Introduction to python and some of its syntax
+                <br>
+                <b>2-</b> Overview of web development with python
+                <br>
+                <b>3-</b> Our first project
+                <br>
+                <b>4-</b> Arthmetic operations
+                <br>
+        </p>
+        <div class"container"><p>
+            <h4>1- Introduction to python and some of its syntax</h4>
+            <ol><p><pre>Python is a multi-purpose programming language, it can be used in web development (developing websites), machine learning (robotics), server and data handling...</pre>
+                        
+                    <p> <pre>Python is widely used among developers, since it is one of few languages that is actually easy and not complicated (like java,c,c#...)</pre>
+                        
+                    <p> <pre>That's why we chose as our programming language!</pre>
+                        
+                    <p></p> <pre>Even this site has a lot of python scripts!</pre>
+                        
+                    <p>  In computers there are two types of the things that computers can do, these are outputs and inputs, outputs are everything that is displayed (on monitors, screens, laptops...) the input is what we type, or what we give the computer for it to be processed.
+                        <br>
+                        <img src="maxresdefault.jpg" alt="Image" style="width: 700px; height: 300px;">
+                     <p> In programming, the vocabulary (words that make up sentences) is called syntax (so technically the one who knows the syntax, knows the language). We as developers tend to learn this syntax, and since it's very easy, it’s a simple task.
+                        <br>
+                        <img src="syntax-vocab-card.png" alt="Image" style="width: 700px; height: 300px;">
+                    <p>  Before we start learning the actual syntax, there is something I want you to do. Firstly, go ahead and install an IDE so that you can work with code, i recommend Visual Studio Code. Secondly, go to the offical python website and download the latest version of python.
+                        <br>
+                        <img src="opengraph-home.png" alt="Image" style="width: 700px; height: 200px;">
+                        <br>
+                        <img src="pythondotorg.png" alt="Image" style="width: 700px; height: 300px;">
+                        <p> <h4><b>1-</b>Print command:</h4>
+                    <p> the print command is used to display anything you want on the screen (your output)
+                        <pre><code>
+                            print("whatever you want")
+                        </pre></code>
+                        this is how to print in python.
+                        <br>
+                        you can aslo add .lower() and .upper() with your print command, to make your output all lowercase letters(.lower()) or uppercase letters (.upper())
+                        you can add that in the following way:
+                        <pre><code>
+                            print("something".lower())
+                            print("something".upper())
+                        </pre></code>
+                        You can go ahead and type that in visual studio code (if you installed it) and see what happens!
+<br>                        
+
+<b>2.</b> **input()**: The `input()` function allows the program to receive input from the user. It displays a message and waits for the user to enter some text. The program can then use this input and display it.
+<br>
+<pre><code>
+    python
+    name = input("What is your name? ")
+    print("Hello, " + name + "! Nice to meet you!")
+</code></pre>
+<br>
+In this example, the program asks the user to enter their name. Whatever the user enters will be stored in the `name` variable. The program then displays a personalized greeting using the entered name.
+<br>
+<b>3.</b> **len()**: The `len()` function is used to determine the length or size of a string, list, or any sequence of elements. It returns the number of characters in a string or the number of elements in a list. Here's an example:
+<br>
+<pre><code>
+    python
+    message = "Hello, World!"
+    length = len(message)
+    print("The length of the message is:", length)  
+</pre></code>
+<br>
+In this example, the program calculates the length of the string stored in the `message` variable using the `len()` function. It then displays the length of the message using the `print()` function.
+
+
+                    </ol></p>
+            <h4>2- Overview of web development with python</h4>
+            <p>
+                <ol>
+
+<p><b>1.</b> **HTML**: HTML stands for Hypertext Markup Language. It's like the skeleton of a web page. HTML uses tags to structure and define the content of a web page. Tags are like instructions that tell the web browser how to display different elements, such as headings, paragraphs, images, and links.</pre>
+
+<p><b>2.</b> **CSS**: CSS stands for Cascading Style Sheets. It's like the decorator of a web page. CSS is used to control the look and feel of HTML elements. It allows you to change the colors, fonts, sizes, and layout of your web page. With CSS, you can make your web page beautiful and visually appealing.</pre>
+
+<p><b>3.</b> **Python**: Python is a programming language that can be used for web development. It provides powerful tools and frameworks for building dynamic and interactive web applications. Python allows you to write code that runs on the server-side to process data, handle user interactions, and perform various tasks.</pre>
+
+<p><b>4.</b> **Web Frameworks**: Web frameworks are libraries or tools that make web development easier. They provide pre-built functions and structures that help you quickly create web applications. Popular Python web frameworks include Django and Flask. These frameworks handle things like URL routing, database interactions, and user authentication, so you can focus on building the core functionality of your web application.</pre>
+
+<p><b>5.</b> **Back-End and Front-End**: In web development, we often talk about the back-end and front-end. The back-end refers to the server-side of the web application. It handles the logic, data processing, and communication with databases. Python is commonly used for back-end development. The front-end refers to the client-side of the web application. It involves creating the user interface and handling user interactions. HTML, CSS, and JavaScript are used for front-end development.</pre>
+
+<p><b>6.</b> **Database**: A database is a place where you can store and organize data for your web application. Python can connect to databases and perform operations like storing, retrieving, and modifying data. Common databases used with Python web development include SQLite, MySQL, and PostgreSQL.</pre>
+
+<p><b>These were the basis of web development, in this course we are not gonna go deeper in them, it's just and overview for you.</b>
+            </p></ol>
+        </p></div>
+        <h4><b>3- Our first project</b></h4>
+        <ol><p>
+            Now that you know how to print, take input, and combine those two values together in one sentence, we can build a small project from it!
+            <br>
+            <pre><code>
+                name = input("What is your name?")
+                mood = input("How are you know (sad, angry, happy...)?")
+                print(name, "is" , mood)
+            </pre></code></ol>
+            <h4><b>4-</b> Arthmetic operations</h4>
+            <ol>
+            <p>
+                In Python, we can perform different arithmetic operations to manipulate numbers. Here are some common arithmetic operations:
+                <br>
+                --Addition (+): Adding two numbers together.
+                Example: 2 + 3 = 5
+                <br>
+                --Subtraction (-): Subtracting one number from another.
+                Example: 5 - 2 = 3
+                <br>
+                --Multiplication (*): Multiplying two numbers to get the total.
+                Example: 2 * 3 = 6
+                <br>
+                --Division (/): Dividing one number by another to find out how many times it fits.
+                <br>
+                Example: 6 / 2 = 3
+                <br>
+                --Modulo (%): Finding the remainder after division.
+                <br>
+                Example: 7 % 3 = 1 (The remainder when dividing 7 by 3 is 1)
+                <br>
+            </p>
+            <p>It's that simple to do math in python.</p>
+        <ol></p>
+    </div>
+    <b><p>And that's it! You completed stage 1! This course gave you the foundation for your career in python, if you want more information check out stack-overflow and maybe ask CHAT-GPT, of course they know better.</p></b>
+
+    
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Dar-Al Hayat School. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
